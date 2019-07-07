@@ -12,5 +12,6 @@ docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} my-registry:5000
 # root, copio il file che viene generato dopo il login (contenente i token di accesso
 # al registry) nella stessa cartella riferita all'utente vagrant.
 
+mkdir -p ${DOCKER_CERTS}
 cp /root/.docker/config.json /home/vagrant/.docker/config.json
 chown -R vagrant:vagrant /home/vagrant/.docker

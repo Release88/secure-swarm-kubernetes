@@ -2,6 +2,7 @@
 !.gitignore
 !registry-config-no-passwd.yml
 !registry-config.yml
+!load-balancer-configuration.yaml
 !registry-pod.yaml
 !registry-port.yaml
 !docker.service.d
