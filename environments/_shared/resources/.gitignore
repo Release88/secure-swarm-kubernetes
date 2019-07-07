@@ -1,0 +1,7 @@
+*
+!.gitignore
+!registry-config-no-passwd.yml
+!registry-config.yml
+!registry-pod.yaml
+!registry-port.yaml
+!docker.service.d

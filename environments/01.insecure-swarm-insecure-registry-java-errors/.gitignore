@@ -1,0 +1,6 @@
+*
+.vagrant/*
+!.gitignore
+!leggimi.txt
+!Vagrantfile
+!README.md

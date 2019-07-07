@@ -1,0 +1,7 @@
+*
+!.gitignore
+!override.conf
+!override-dev-insecure-registry.conf
+!override-dev.conf
+!override-ssl-insecure-registry.conf
+!override-ssl.conf
