@@ -75,6 +75,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			node.vm.provision :shell, path: "../_shared/scripts/setup-docker-insecure-registry.sh"
 			node.vm.provision :shell, path: "../_shared/scripts/setup-docker-compose.sh"
 			node.vm.provision :shell, path: "../_shared/scripts/setup-swarm-hosts.sh"
+			node.vm.provision :shell, path: "../_shared/scripts/add-insecure-registry-to-daemon.sh"
 
 			
 			# crea lo swarm sul nodo 1 (e avvia anche il registry per lo swarm)
@@ -128,10 +129,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 		node.vm.provision :shell, path: "../_shared/scripts/copy-ssl-client-certs-for-swarm.sh"
 		# copia il file override-dev.conf e lo rinomina in override.conf 
 		node.vm.provision :shell, path: "../_shared/scripts/standard-override-insecure-registry.sh"
+
 		# installa docker e docker compose
 		node.vm.provision :shell, path: "../_shared/scripts/setup-docker-insecure-registry.sh"
 		node.vm.provision :shell, path: "../_shared/scripts/setup-docker-compose.sh"
 		node.vm.provision :shell, path: "../_shared/scripts/setup-swarm-hosts.sh"
+		node.vm.provision :shell, path: "../_shared/scripts/add-insecure-registry-to-daemon.sh"
 
 		# crea un link simbolico alla cartella dei progetti asw nella cartella dell'utente di default 
 		node.vm.provision :shell, :inline => 'ln -s /home/asw/projects projects'
