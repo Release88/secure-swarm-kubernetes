@@ -196,102 +196,6 @@ status: {}
 apiVersion: v1
 kind: Service
 metadata:
-  name: zuul-service
-spec:
-  ports:
-  - name: "8080"
-    port: 8080
-    protocol: TCP
-    targetPort: 8080
-    nodePort: 30080
-  selector:
-    io.kompose.service: zuul
-  type: LoadBalancer
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: eureka-node-port
-  labels:
-    name: eureka-node-port
-spec:
-  type: NodePort
-  ports:
-    - port: 8761
-      targetPort: 8761
-      name: eureka-node-port
-  selector:
-    io.kompose.service: eureka
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: subject-node-port
-  labels:
-    name: subject-node-port
-spec:
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 8080
-      name: subject-node-port
-  selector:
-    io.kompose.service: subject
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: verb-node-port
-  labels:
-    name: verb-node-port
-spec:
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 8080
-      name: verb-node-port
-  selector:
-    io.kompose.service: verb
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: object-node-port
-  labels:
-    name: object-node-port
-spec:
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 8080
-      name: object-node-port
-  selector:
-    io.kompose.service: object
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: sentence-node-port
-  labels:
-    name: sentence-node-port
-spec:
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 8080
-      name: sentence-node-port
-  selector:
-    io.kompose.service: sentence
-
----
-apiVersion: v1
-kind: Service
-metadata:
   name: zuul-node-port
   labels:
     name: zuul-node-port
@@ -301,5 +205,9 @@ spec:
     - port: 8080
       targetPort: 8080
       name: zuul-node-port
+  externalIPs:
+    - 10.11.1.71
+    - 10.11.1.72
+    - 10.11.1.73
   selector:
     io.kompose.service: zuul

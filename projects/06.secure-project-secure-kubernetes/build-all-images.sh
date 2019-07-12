@@ -1,8 +1,13 @@
 #!/bin/bash
 
+source "/home/asw/_shared/scripts/common.sh"
+
+DOCKER_REGISTRY=my-registry:5000
+
+docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${DOCKER_REGISTRY}
+
 # DOCKER_REGISTRY=localhost:5000
 # my-registry e my-swarm sono degli alias per swarm-1
-DOCKER_REGISTRY=my-registry:5000
 
 docker build --rm -t ${DOCKER_REGISTRY}/eureka-server-img ./eureka-server
 docker build --rm -t ${DOCKER_REGISTRY}/word-img ./word-service

@@ -5,14 +5,11 @@ metadata:
   labels:
     name: registry-port
 spec:
-  type: NodePort
   ports:
     - port: 5000
-      nodePort: 30500
       targetPort: 5000
       name: http
     - port: 443
-      nodePort: 32443
       targetPort: 443
       name: https
   externalIPs:
