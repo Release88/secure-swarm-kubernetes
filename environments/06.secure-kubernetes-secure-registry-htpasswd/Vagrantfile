@@ -118,7 +118,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
             elsif opts[:type] == "dev"
                 config.vm.provision :shell, path: "../_shared/scripts/setup-kubernetes-dev.sh"
-                config.vm.provision :shell, path: "../_shared/scripts/docker-registry-login.sh"
             else
                 config.vm.provision :shell, path: "../_shared/scripts/setup-kubernetes-node.sh"
             end
