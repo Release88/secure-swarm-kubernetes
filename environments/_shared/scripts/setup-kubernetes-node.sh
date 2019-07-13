@@ -2,6 +2,7 @@
 
 echo "Nodo kubernetes"
 
+# see https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join/
 # see https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/
 # altri spunti da https://jimmysong.io/en/posts/setting-up-a-kubernetes-cluster-with-vagrant/
 
