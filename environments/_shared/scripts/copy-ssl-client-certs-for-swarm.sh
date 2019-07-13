@@ -2,6 +2,9 @@
 
 source "/home/asw/_shared/scripts/common.sh"
 
+# see https://docs.docker.com/engine/security/https/
+
+
 # Creo la cartella in cui salvare i certificati
 mkdir -p ${DOCKER_CERTS}
 

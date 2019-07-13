@@ -2,6 +2,8 @@
 
 source "/home/asw/_shared/scripts/common.sh"
 
+# see https://docs.docker.com/engine/reference/commandline/login/
+
 # effettua il login al registry protetto da password
 # nome utente e password vengono impostati nel file common.sh
 

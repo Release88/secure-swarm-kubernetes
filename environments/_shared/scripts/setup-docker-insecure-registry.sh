@@ -4,6 +4,10 @@ source "/home/asw/_shared/scripts/common.sh"
 
 # see https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
+# In questo nuovo file viene solamente rimossa la parte relativa a
+# override.conf, spostata su un altro script.
+# Per il resto è del tutto simile alla versione precedente
+
 # set up Docker constants 
 DOCKER_VERSION=18.06.1~ce~3-0~ubuntu
 

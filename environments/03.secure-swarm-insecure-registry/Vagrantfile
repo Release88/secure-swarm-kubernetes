@@ -81,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			# crea lo swarm sul nodo 1 (e avvia anche il registry per lo swarm)
 			if i==1
 			  node.vm.provision :shell, path: "../_shared/scripts/start-swarm-secure.sh"
-			  node.vm.provision :shell, path: "../_shared/scripts/start-swarm-unsecure-registry-secure-swarm.sh"
+			  node.vm.provision :shell, path: "../_shared/scripts/start-swarm-insecure-registry-secure-swarm.sh"
 			end
 
 			# crea un link simbolico alla cartella dei progetti asw nella cartella dell'utente di default 

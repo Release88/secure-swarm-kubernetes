@@ -16,7 +16,7 @@ echo "================="
 echo "installing docker"
 echo "================="
 
-# per Ubuntu 16.04 LTS 
+# per Ubuntu 16.04 LTS e 18.04 LTS 
 # per Ubuntu 14.04 LTS ci sarebbero delle differenze (vedi 2017) 
 VAGRANT_USER=vagrant 
 

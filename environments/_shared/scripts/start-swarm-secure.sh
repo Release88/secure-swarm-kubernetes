@@ -3,6 +3,11 @@
 # da eseguire sul nodo swarm-1 
 # richiede che su ciascun nodo dello swarm sia abilitato l'accesso remoto 
 
+# modifica delle chiamate per il join dei nodi. Integrazione dei flag per i
+# certificati
+# see https://docs.docker.com/engine/security/https/
+
+
 echo "Creating swarm on swarm-1" 
 
 docker swarm init --advertise-addr ${IP_PREFIX}$(($IP_STARTING_NUM+1))

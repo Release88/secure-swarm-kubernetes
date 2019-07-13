@@ -1,6 +1,9 @@
 #!/bin/bash
 
+# see https://docs.docker.com/engine/security/certificates/
+
 source "/home/asw/_shared/scripts/common.sh"
+
 
 mkdir -p ${DOCKER_CERTS}/registry
 # Copio i files necessari nella cartella creata

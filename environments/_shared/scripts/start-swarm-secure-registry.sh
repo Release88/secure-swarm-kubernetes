@@ -2,6 +2,11 @@
 
 # https://docs.docker.com/registry/deploying/
 
+# il file config.yml verrà sovrascritto nel container così da permettere
+# la nuova configurazione che prevede la sicurezza tls e la protezione
+# tramite credenziali di accesso.
+# see https://docs.docker.com/registry/configuration/
+
 echo 'Starting private registry as a service -> my-registry:5000' 
 
 source "/home/asw/_shared/scripts/common.sh"
@@ -20,6 +25,7 @@ mkdir -p /home/asw/data/my-registry
 
 # creazione del file htpasswd, essenziale per fornire in formato criptato le credenziali
 # al servizio registry
+# see https://medium.com/@lvthillo/deploy-a-docker-registry-using-tls-and-htpasswd-56dd57a1215a
 
 docker run --name temp-registry \
         --entrypoint htpasswd  registry:2 \

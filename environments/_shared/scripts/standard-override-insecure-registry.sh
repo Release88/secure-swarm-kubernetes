@@ -2,6 +2,8 @@
 
 source "/home/asw/_shared/scripts/common.sh"
 
+# impostazione dell'override.conf ereditata dal progetto iniziale
+
 #
 # copia il file OVERRIDE.CONF per sovrascrivere la configurazione di docker 
 # - abilita la comunicazione remota della macchina dev

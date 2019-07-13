@@ -2,6 +2,9 @@
 
 source "/home/asw/_shared/scripts/common.sh"
 
+# impostazione dell'override.conf ereditata dal progetto iniziale
+# integrazione della protezione da https://docs.docker.com/engine/security/https/
+
 #
 # copia il file OVERRIDE.CONF per sovrascrivere la configurazione di docker 
 # - abilita la comunicazione remota del nodo 

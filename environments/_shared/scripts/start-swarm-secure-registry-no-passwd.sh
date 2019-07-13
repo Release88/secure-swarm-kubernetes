@@ -2,6 +2,9 @@
 
 # https://docs.docker.com/registry/deploying/
 
+# see https://docs.docker.com/registry/configuration/
+# see https://docs.docker.com/registry/deploying/#run-the-registry-as-a-service
+
 echo 'Starting private registry as a service -> my-registry:5000' 
 
 source "/home/asw/_shared/scripts/common.sh"

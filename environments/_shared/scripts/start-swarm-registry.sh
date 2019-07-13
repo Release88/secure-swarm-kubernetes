@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # https://docs.docker.com/registry/deploying/
+# # integrazione della protezione da https://docs.docker.com/engine/security/https/
 
 echo 'Starting private registry as a service -> my-registry:5000' 
 

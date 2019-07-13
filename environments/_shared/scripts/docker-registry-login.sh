@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# see https://docs.docker.com/engine/reference/commandline/login/
+
 source "/home/asw/_shared/scripts/common.sh"
 
 # effettua il login al registry protetto da password

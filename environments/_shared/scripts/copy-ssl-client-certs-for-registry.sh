@@ -2,6 +2,8 @@
 
 source "/home/asw/_shared/scripts/common.sh"
 
+# see https://docs.docker.com/engine/security/certificates/
+
 # REGISTRY_SSL_PATH corrisponde al percorso alla cartella: 
 # /etc/docker/certs.d/my-registry:5000
 # come indicato dalla documentazione di docker

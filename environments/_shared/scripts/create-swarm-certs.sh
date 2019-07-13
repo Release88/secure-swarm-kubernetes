@@ -2,6 +2,8 @@
 
 source "/home/asw/_shared/scripts/common.sh"
 
+# see https://docs.docker.com/engine/security/https/
+
 # generazione di certificati
 
 export CERTS_PATH=${ASW_RESOURCES}/certs

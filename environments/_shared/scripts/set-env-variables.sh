@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# utilizzato per impostare le variabili d'ambiente utili
+# durante il provisioning delle macchine
+# prende in ingresso i parametri di configurazione forniti
+# al suo lancio da Vagrantfile
+
 STARTING_IP=$1
 REGISTRY_DOMAIN=$2
 SWARM_DOMAIN=$3
